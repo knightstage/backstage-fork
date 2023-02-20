@@ -123,6 +123,11 @@ proxy:
     headers:
       St2-Api-Key: ${ST2_API_KEY}
 
+  '/github':
+    target: https://api.github.com
+    headers:
+      Authorization: 'token ${GITHUB_TOKEN}'
+
 organization:
   name: My Company
 

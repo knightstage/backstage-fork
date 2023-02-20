@@ -6086,6 +6086,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@backstage/plugin-frontside-plugin@^0.0.0, @backstage/plugin-frontside-plugin@workspace:plugins/frontside-plugin":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-frontside-plugin@workspace:plugins/frontside-plugin"
+  dependencies:
+    "@backstage/cli": "workspace:^"
+    "@backstage/core-app-api": "workspace:^"
+    "@backstage/core-components": "workspace:^"
+    "@backstage/core-plugin-api": "workspace:^"
+    "@backstage/dev-utils": "workspace:^"
+    "@backstage/plugin-catalog-react": "workspace:^"
+    "@backstage/test-utils": "workspace:^"
+    "@backstage/theme": "workspace:^"
+    "@material-ui/core": ^4.9.13
+    "@material-ui/icons": ^4.9.1
+    "@material-ui/lab": ^4.0.0-alpha.57
+    "@testing-library/jest-dom": ^5.10.1
+    "@testing-library/react": ^12.1.3
+    "@testing-library/user-event": ^14.0.0
+    "@types/node": "*"
+    cross-fetch: ^3.1.5
+    msw: ^0.49.0
+    react-use: ^17.2.4
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "@backstage/plugin-gcalendar@workspace:^, @backstage/plugin-gcalendar@workspace:plugins/gcalendar":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-gcalendar@workspace:plugins/gcalendar"
@@ -22406,6 +22433,7 @@ __metadata:
     "@backstage/plugin-dynatrace": "workspace:^"
     "@backstage/plugin-entity-feedback": "workspace:^"
     "@backstage/plugin-explore": "workspace:^"
+    "@backstage/plugin-frontside-plugin": ^0.0.0
     "@backstage/plugin-gcalendar": "workspace:^"
     "@backstage/plugin-gcp-projects": "workspace:^"
     "@backstage/plugin-github-actions": "workspace:^"

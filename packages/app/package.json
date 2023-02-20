@@ -32,6 +32,7 @@
     "@backstage/plugin-dynatrace": "workspace:^",
     "@backstage/plugin-entity-feedback": "workspace:^",
     "@backstage/plugin-explore": "workspace:^",
+    "@backstage/plugin-frontside-plugin": "^0.0.0",
     "@backstage/plugin-gcalendar": "workspace:^",
     "@backstage/plugin-gcp-projects": "workspace:^",
     "@backstage/plugin-github-actions": "workspace:^",

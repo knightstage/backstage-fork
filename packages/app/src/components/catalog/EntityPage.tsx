@@ -166,6 +166,10 @@ import {
   isLinguistAvailable,
   EntityLinguistCard,
 } from '@backstage/plugin-linguist';
+import {
+  EntityFronsidePluginCard,
+  EntityFrontsidePluginContent,
+} from '@backstage/plugin-frontside-plugin';
 
 const customEntityFilterKind = ['Component', 'API', 'System'];
 
@@ -226,6 +230,8 @@ const techdocsContent = (
  * since this does not default. If no breakpoints are used, the items will equitably share the available space.
  * https://material-ui.com/components/grid/#basic-grid.
  */
+
+export const frontsideContent = <EntityFrontsidePluginContent />;
 
 export const cicdContent = (
   <EntitySwitch>
@@ -391,6 +397,10 @@ const overviewContent = (
       </InfoCard>
     </Grid>
 
+    <Grid item md={4} xs={12}>
+      <EntityFronsidePluginCard />
+    </Grid>
+
     {cicdCard}
 
     <EntitySwitch>
@@ -439,6 +449,10 @@ const serviceEntityPage = (
   <EntityLayoutWrapper>
     <EntityLayout.Route path="/" title="Overview">
       {overviewContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/frontside-plugin" title="Frontside">
+      {frontsideContent}
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
@@ -547,6 +561,10 @@ const websiteEntityPage = (
   <EntityLayoutWrapper>
     <EntityLayout.Route path="/" title="Overview">
       {overviewContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/frontside-plugin" title="Frontside">
+      {frontsideContent}
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
