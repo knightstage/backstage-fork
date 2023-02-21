@@ -73,6 +73,7 @@
     "@gitbeaker/node": "^35.1.0",
     "@octokit/rest": "^19.0.3",
     "azure-devops-node-api": "^11.0.1",
+    "backstage-plugin-app-generator-plugin-backend": "^0.0.0",
     "better-sqlite3": "^8.0.0",
     "dockerode": "^3.3.1",
     "example-app": "link:../app",

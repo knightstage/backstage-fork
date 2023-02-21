@@ -25,20 +25,18 @@ import {
   SupportButton,
   Progress,
 } from '@backstage/core-components';
-import { ExampleFetchComponent } from '../ExampleFetchComponent';
 import { useAsync } from 'react-use';
 import { discoveryApiRef, useApi } from '@backstage/core-plugin-api';
 import { Alert } from '@material-ui/lab';
-import { DenseTable } from '../ExampleFetchComponent/ExampleFetchComponent';
 
 const GitHubProxyComponent = () => {
   const discoveryApi = useApi(discoveryApiRef);
-  const baseUrl = discoveryApi.getBaseUrl('proxy');
+  const proxyBackendBaseUrl = discoveryApi.getBaseUrl('proxy');
 
   const { value, loading, error } = useAsync(async () => {
-    const response = await fetch(await baseUrl);
+    const response = await fetch(`${await proxyBackendBaseUrl}/github/user`);
     const data = await response.json();
-    return data.results;
+    return data;
   }, []);
 
   if (loading) {
@@ -47,7 +45,7 @@ const GitHubProxyComponent = () => {
     return <Alert severity="error">{error.message}</Alert>;
   }
 
-  return <DenseTable users={value || []} />;
+  return <div>Logged in as user: {value.login}</div>;
 };
 
 export const ExampleComponent = () => (

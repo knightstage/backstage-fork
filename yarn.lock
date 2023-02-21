@@ -17576,6 +17576,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"backstage-plugin-app-generator-plugin-backend@^0.0.0, backstage-plugin-app-generator-plugin-backend@workspace:plugins/app-generator-plugin-backend":
+  version: 0.0.0-use.local
+  resolution: "backstage-plugin-app-generator-plugin-backend@workspace:plugins/app-generator-plugin-backend"
+  dependencies:
+    "@backstage/backend-common": "workspace:^"
+    "@backstage/cli": "workspace:^"
+    "@backstage/config": "workspace:^"
+    "@types/express": "*"
+    "@types/supertest": ^2.0.8
+    express: ^4.18.1
+    express-promise-router: ^4.1.0
+    msw: ^0.49.0
+    node-fetch: ^2.6.7
+    supertest: ^6.2.4
+    winston: ^3.2.1
+    yn: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
 "badge-maker@npm:^3.3.0":
   version: 3.3.1
   resolution: "badge-maker@npm:3.3.1"
@@ -22578,6 +22597,7 @@ __metadata:
     "@types/express-serve-static-core": ^4.17.5
     "@types/luxon": ^3.0.0
     azure-devops-node-api: ^11.0.1
+    backstage-plugin-app-generator-plugin-backend: ^0.0.0
     better-sqlite3: ^8.0.0
     dockerode: ^3.3.1
     example-app: "link:../app"
