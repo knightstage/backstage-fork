@@ -178,6 +178,9 @@ kafka:
       brokers:
         - localhost:9092
 
+app-generator:
+  generatorType: jhipster
+
 allure:
   baseUrl: http://localhost:5050/allure-docker-service
 
